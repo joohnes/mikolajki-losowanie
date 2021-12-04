@@ -24,5 +24,3 @@ def sendMail(Subject: str = "Random subject", content: str = "Random content", f
     s.login("jacek.m2121@gmail.com", password= password)
     s.send_message(msg)
     s.quit()
-
-sendMail()
