@@ -15,7 +15,10 @@ def sendMail(Subject: str, content: str, file):
     msg.add_attachment(img_data, maintype='image',
                                 subtype=imghdr.what(None, img_data))
     
+    with open('passwords.txt', 'r') as f:
+        password = f.read()
+    
     s = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    s.login("jacek.m2121@gmail.com", 'B40zcp3n')
+    s.login("jacek.m2121@gmail.com", password= password)
     s.send_message(msg)
     s.quit()

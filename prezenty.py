@@ -1,8 +1,8 @@
 def losowanie():
     from random import randrange
 
-    lst = ['Antek', 'Bochyn', 'Hadziu', 'Julia', 'Karolina', 'Pieniek', 'Jezus', 'Gorszy', 'Gontarek', 'Jaron', \
-            'Staniak', 'Sylwia', 'Tomek', 'Wiktor']
+    lst = ['Antek', 'Bochyn', 'Hadziu', 'Karolina', 'Pieniek', 'Jezus', 'Gorszy', 'Gontarek', 'Jaron', \
+            'Staniak', 'Sylwia', 'Tomek', 'Wiktor', "Aleks"]
 
     newmax: int = 0
     for name in lst:
